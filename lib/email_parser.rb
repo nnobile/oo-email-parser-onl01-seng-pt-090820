@@ -14,7 +14,7 @@ class EmailAddressParser
         arr = string.split(" ")
         second_split = second_split + arr # combines the arr strings with the second split array
       end
-      return second_split
+      return second_split.uniq
     else @string.include?(" ")
       return @string.split(" ")
     end
