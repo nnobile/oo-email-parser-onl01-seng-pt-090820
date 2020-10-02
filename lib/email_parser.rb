@@ -7,7 +7,7 @@ class EmailAddressParser
   end
 
   def parse
-    return @string.split(", ")
+    return @string.split(", ") 
   end
 
 end
