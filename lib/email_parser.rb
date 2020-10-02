@@ -8,12 +8,16 @@ class EmailAddressParser
 
   def parse
     if @string.include?(", ")
-      return @string.split(", ").each do |email|
+      first_split = @string.split(", ") # => ["email", "email email"]
+      second_split = []
+      first_split.each do |string|
+        arr = string.split(" ")
+        second_split = second_split + arr # combines the arr strings with the second split array
+      end
+      return second_split
     else @string.include?(" ")
-      return @string.split(" ")
-
-    end
-  end
+         return @string.split(" ")
+       end
 
 end
 
