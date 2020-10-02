@@ -7,7 +7,12 @@ class EmailAddressParser
   end
 
   def parse
-    return @string.split(", ") 
+    if @string.include?(", ")
+      return @string.split(", ")
+    else @string.include?(" ")
+      return @string.split(", ")
+
+
   end
 
 end
