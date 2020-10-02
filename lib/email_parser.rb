@@ -1,7 +1,7 @@
 class EmailAddressParser
   attr_accessor :emails
 
-def self.parse(emails)
+def parse(emails)
   @emails = emails
   emails.parse.each
 end
