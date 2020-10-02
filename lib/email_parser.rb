@@ -8,9 +8,10 @@ class EmailAddressParser
 
   def parse
     if @string.include?(", ")
-      return @string.split(", ")
+      return @string.split(", ").each do |email|
     else @string.include?(" ")
       return @string.split(" ")
+
     end
   end
 
