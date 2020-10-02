@@ -19,6 +19,7 @@ class EmailAddressParser
       return @string.split(" ")
     end
   end
+end
 
 
 
