@@ -1,13 +1,14 @@
 class EmailAddressParser
   attr_accessor :emails
 
-
 def self.parse(emails)
   @emails = emails
-  emails.parse.each 
+  emails.parse.each
 end
 
 end
+
+EmailAddressParser.new("")
 
 
 # Build a class EmailAddressParser that accepts a string of unformatted emails.
