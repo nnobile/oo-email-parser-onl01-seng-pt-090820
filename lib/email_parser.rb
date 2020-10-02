@@ -2,13 +2,12 @@ class EmailAddressParser
   attr_accessor :emails
 
   def initialize(string)
-    @string = string  
+    @string = string
+    @emails = []
   end
 
-def parse
-  @emails = emails
-  emails.parse.each
-end
+  def parse
+  end
 
 end
 
