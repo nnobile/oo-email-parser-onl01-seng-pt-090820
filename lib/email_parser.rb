@@ -12,7 +12,7 @@ class EmailAddressParser
     elsif @string.include?(", ")
       return @string.split(" ")
     else @string.include?(", ") or @string.include?(" ")
-      return
+      return @string.split(" ")
     end
   end
 
