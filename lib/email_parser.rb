@@ -17,7 +17,7 @@ class EmailAddressParser
 
 end
 
-EmailAddressParser.new("")
+
 
 
 # Build a class EmailAddressParser that accepts a string of unformatted emails.
