@@ -16,10 +16,9 @@ class EmailAddressParser
       end
       return second_split
     else @string.include?(" ")
-         return @string.split(" ")
-       end
-
-end
+      return @string.split(" ")
+    end
+  end
 
 
 
