@@ -9,8 +9,9 @@ class EmailAddressParser
   def parse
     if @string.include?(", ")
       return @string.split(", ")
-    else @string.include?(", ")
+    elsif @string.include?(", ")
       return @string.split(" ")
+    else 
     end
   end
 
